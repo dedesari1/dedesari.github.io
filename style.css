@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-weight: 600;
-    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 .container-utama{
@@ -21,13 +19,12 @@ img{
 }
 
 header {
-    background: white;
+    background: #feeff8;
     padding: 20px;
-    color: black;
+    color: white;
     position: fixed;
     z-index: 9999;
     width: 100%;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .header-flex {
@@ -51,14 +48,15 @@ header {
     padding-right: 20px;
     color: white;
     border-radius: 30px;
-    /* margin-right: 100px; */
     cursor: pointer;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
+    font-weight: 500;
 }
+
 
 .btn-header:hover{
     opacity: 0.7;
@@ -79,7 +77,7 @@ header {
 }
 
 .nav-links ul li a {
-    color: black;
+    color: #ff0080;
     text-decoration: none;
     font-size: 18px;
 }
@@ -94,6 +92,7 @@ header {
 .menu-btn i {
     font-size: 24px;
     cursor: pointer;
+    color: #ff0080;
 }
 
 .mobile-menu {
@@ -103,7 +102,7 @@ header {
     left: 0;
     width: 100%;
     height: 200px;
-    background-color: white;
+    background-color: #feeff8;
     justify-content: normal;
     z-index: 1000;
     flex-direction: column;
@@ -219,9 +218,6 @@ li:hover .dropdown {
     gap: 5px;
 }
 
-.text{
-    font-size: 14px;
-}
 
 .list-flex{
 display: flex;
@@ -230,9 +226,13 @@ gap: 10px;
 }
 
 .nav-links ul li.active a {
-color: #ff0080; 
+color: black; 
 font-weight: bold;
+}
 
+.nav-links ul li a:hover{
+  color: black;
+  transition: 0.3s;
 }
 
 
@@ -345,11 +345,9 @@ margin-top: 0;
 }
 
 .txt2{
-    font-size: 35px;
-    padding-bottom: 30px;
-    line-height: 1.5;
     color: #ff0080;
     font-weight: bold;
+    font-family: "Amatir SC";
 }
 
 .txt3{
@@ -460,7 +458,12 @@ object-fit: cover;
 
    .text{
     font-size: 16px;
-    line-height: 2.2;
+    line-height: 1.6;
+    font-weight: 500;
+   }
+
+   table{
+    font-weight: 500;
    }
    
 
@@ -512,7 +515,6 @@ object-fit: cover;
     text-align: center;
     color: #FF0080;
     font-size: 25px;
-    font-weight: bold;
   }
 
 
@@ -696,6 +698,7 @@ tr{
     color: white;
     text-decoration: none;
     gap: 5px;
+    font-weight: 500;
   }
 
   .contact:hover{
@@ -722,7 +725,7 @@ tr{
     border: 1px solid #ff0080;
     padding: 40px;
     gap: 20px;
-    background-color: #feeff8;
+    background-color: white;
     color: #ff0080;
     font-weight: bold;
   }
@@ -737,8 +740,34 @@ tr{
     font-size: 20px;
   }
 
-  .card-skill i:hover{
-    color: green;
+  .card-skill .fa-html5{
+    color: #E44D26;
+  }
+
+  .card-skill .fa-css3-alt{
+    color: #264de4;;
+  }
+
+
+  .card-skill .fa-bootstrap{
+  color: #7952b3;
+  }
+
+  .card-skill .fa-php{
+  color: #8892BF;
+  }
+
+  .card-skill .fa-js{
+    color: #F7DF1E;
+  }
+
+  .card-skill .fa-code{
+    color: 	#0769AD;
+  }
+  
+
+  .card-skill .fa-github{
+    color: 	#181717;
   }
   
 
@@ -750,6 +779,7 @@ tr{
   .skil-flex{
     padding-top: 20px;
   }
+
 
  
   .portofolio-flex{
@@ -807,6 +837,39 @@ tr{
   }
   
 
+.wave{
+  background-color: #E6AFD0;
+  padding-bottom: 30px;
+}
+
+.nav-links ul li{
+  font-weight: 500;
+}
+
+.copyright{
+  padding-top: 20px;
+}
+
+.center{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.tab-btn {
+  background-color: #feeff8;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.tab-btn.active{
+  background-color: #ff0080;
+  color: white;
+}
+
+.all{
+  width: 60px;
+}
 
 @media (max-width: 768px) {
     .nav-links {
