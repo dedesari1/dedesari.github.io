@@ -792,23 +792,13 @@ tr{
       border-radius: 20px;
     }
 
-    .porto-flex:hover{
-      opacity: 0.7;
-    }
 
     .porto-flex{
       width: 32%;
     position: relative;
     }
 
-    .porto-flex img:hover{
-      box-shadow: 0px 0px 10px 0px #ff0080;
-      /* border-radius: 20px; */
-      /* background-color: white; */
-      transition: 0.3s;
-      opacity: 0.9;
-      
-    }
+  
 
     .view-button {
       display: none;
@@ -869,6 +859,10 @@ tr{
 
 .all{
   width: 60px;
+}
+
+.wave2{
+  margin-top: -10px;
 }
 
 @media (max-width: 768px) {
