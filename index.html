@@ -228,9 +228,8 @@ Development Portofolio!
 
 
     <div class="container">
-    <section id="about-href">
     <section class="space">
-        <h2 class="title"><strong>ABOUT ME</strong></h2>
+        <h2 class="title" id="about-href"><strong>ABOUT ME</strong></h2>
         <div class="gris"></div>
         <div class="about">
             <div class="about-flex">
@@ -275,11 +274,10 @@ Development Portofolio!
                
             </div>
     </section>
-</section>
 
 
-    <section class="space" id="skill">
-        <h2 class="title"><strong>SKILLS</strong></h2>
+    <section class="space" >
+        <h2 class="title" id="skill"><strong>SKILLS</strong></h2>
         <div class="gris"></div>
         <div class="skil-flex">
           <div class="skill-card">
@@ -337,8 +335,8 @@ Development Portofolio!
 
 
 
-    <section class="space padding" id="resume">
-        <h2 class="title"><strong>RESUME</strong></h2>
+    <section class="space padding">
+        <h2 class="title" id="resume"><strong>RESUME</strong></h2>
         <div class="gris"></div>
         <div class="resume">
             <div class="resume-flex">
@@ -403,8 +401,8 @@ Development Portofolio!
     </section>
 
 
-    <section class="padding portofolio" id="portofolio">
-        <h2 class="title"><strong>PORTOFOLIO</strong></h2>
+    <section class="padding portofolio">
+        <h2 class="title" id="portofolio"><strong>PORTOFOLIO</strong></h2>
         <div class="gris"></div>
 
       
@@ -478,6 +476,9 @@ Development Portofolio!
   </div>
 
 
+<button onclick="scrollToTop()" id="backToTop">
+  <i class="fas fa-arrow-up"></i>
+</button>
 
 
 
@@ -539,7 +540,31 @@ Development Portofolio!
       e.preventDefault();
     }
   });
+
+
+
+  // Tampilkan tombol saat discroll
+window.onscroll = function () {
+  const btn = document.getElementById("backToTop");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// Scroll ke atas
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+
+
 </script>
+
 
 
 
