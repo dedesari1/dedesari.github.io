@@ -858,12 +858,6 @@ tr{
 }
 
 
-.tab-filter{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
 .all{
   width: 60px;
 }
@@ -871,6 +865,21 @@ tr{
 .wave2{
   margin-top: -10px;
 }
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background-color: #ff0080;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
 
 @media (max-width: 768px) {
     .nav-links {
